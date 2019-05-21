@@ -4,6 +4,8 @@ MAINTAINER liangbin620@pingan.com.cn
 
 WORKDIR /home/install
 
+USER root
+
 RUN apt-get update \
 # && apt-get install -y python-qt4 \
  && pip install keras==2.2.0 -i https://pypi.tuna.tsinghua.edu.cn/simple \

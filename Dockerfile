@@ -8,8 +8,8 @@ USER root
 
 RUN apt-get update \
  && pip install --upgrade pip \
- && pip --no-cache-dir install opencv-python==3.4.2.17 -i https://pypi.tuna.tsinghua.edu.cn/simple \
- && pip --no-cache-dir install https://files.pythonhosted.org/packages/59/d2/4e806f73b4b72daab9064c99394fc22ea6ef1fb052154546405057cd192d/torch-1.0.1.post2-cp35-cp35m-manylinux1_x86_64.whl \
+ && pip --no-cache-dir install opencv-python==3.4.2.17 \
+ && pip --no-cache-dir install torch=1.0.1.post2 \
  && pip --no-cache-dir install torchvision \
  && pip --no-cache-dir install tornado \ 
  && apt-get install -y default-jdk 

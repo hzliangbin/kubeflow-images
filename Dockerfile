@@ -9,7 +9,7 @@ USER root
 RUN apt-get update \
  && pip install --upgrade pip \
  && pip --no-cache-dir install opencv-python==3.4.2.17 \
- && pip --no-cache-dir install torch=1.0.1.post2 \
+ && pip --no-cache-dir install torch==1.0.1.post2 \
  && pip --no-cache-dir install torchvision \
  && pip --no-cache-dir install tornado \ 
  && apt-get install -y default-jdk 

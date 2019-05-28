@@ -12,6 +12,7 @@ RUN apt-get update \
  && pip --no-cache-dir install torch==1.0.1.post2 \
  && pip --no-cache-dir install torchvision \
  && pip --no-cache-dir install tornado \ 
+ && pip --no-cache-dir install matplotlib \ 
  && apt-get install -y default-jdk 
  
 EXPOSE 8888
